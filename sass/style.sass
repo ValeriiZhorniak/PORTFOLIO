@@ -1,5 +1,7 @@
 $color_header: #1d4e80
 $color_white: #fff
+$color_text: #616e7c
+$color_orange: #f48f1a
 
 //HEADER
 .header
@@ -15,6 +17,9 @@ $color_white: #fff
         color: $color_white
         margin: 0 20px 0 20px
         letter-spacing: 1px
+        &:hover
+            color: $color_orange
+            transition: ease 0.3s
     &__name
         color: $color_white
         letter-spacing: 1px
@@ -22,4 +27,31 @@ $color_white: #fff
         display: flex
         flex-direction: row
 
+//ABOUT
+.about
+    &__content
+        height: 840px
+        display: flex
+        flex-direction: column
+        align-content: center
+        align-items: center
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+    &__title
+        font-size: 30px
+        color: $color_header
+        letter-spacing: 1px
+        font-weight: bold
+        margin-top: 70px
+        padding-bottom: 35px
+        border-bottom: solid 5px $color_orange
+    &__photo
+        border-radius: 50%
+        height: auto
+        width: 100%
+        max-width: 250px
+        margin-top: 70px
+    &__text
+        color: $color_text
+        width: 950px
+        margin-top: 30px
 

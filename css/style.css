@@ -12,6 +12,10 @@
   margin: 0 20px 0 20px;
   letter-spacing: 1px;
 }
+.header__item:hover {
+  color: #f48f1a;
+  transition: ease 0.3s;
+}
 .header__name {
   color: #fff;
   letter-spacing: 1px;
@@ -19,4 +23,34 @@
 .header__list {
   display: flex;
   flex-direction: row;
+}
+
+.about__content {
+  height: 840px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.about__title {
+  font-size: 30px;
+  color: #1d4e80;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-top: 70px;
+  padding-bottom: 35px;
+  border-bottom: solid 5px #f48f1a;
+}
+.about__photo {
+  border-radius: 50%;
+  height: auto;
+  width: 100%;
+  max-width: 250px;
+  margin-top: 70px;
+}
+.about__text {
+  color: #616e7c;
+  width: 950px;
+  margin-top: 30px;
 }
