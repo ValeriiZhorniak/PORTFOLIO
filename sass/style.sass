@@ -1,11 +1,23 @@
-$color_header: #1d4e80
+$color_header: #2c3e50
 $color_white: #fff
 $color_text: #616e7c
 $color_orange: #f48f1a
+$color_bg: #dfe0e4
+$color_black: #000
+
+@mixin example
+    background-size: 100% 100%
+    width: 400px
+    height: 400px
+    margin: 30px 60px 30px 60px
+    border: 1px solid $color_text
 
 //HEADER
 .header
     &__content 
+        position: fixed
+        z-index: 10
+        width: 100%
         height: 60px
         background-color: $color_header
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
@@ -30,7 +42,7 @@ $color_orange: #f48f1a
 //ABOUT
 .about
     &__content
-        height: 840px
+        height: 900px
         display: flex
         flex-direction: column
         align-content: center
@@ -41,17 +53,109 @@ $color_orange: #f48f1a
         color: $color_header
         letter-spacing: 1px
         font-weight: bold
-        margin-top: 70px
+        margin-top: 150px
         padding-bottom: 35px
         border-bottom: solid 5px $color_orange
     &__photo
         border-radius: 50%
         height: auto
         width: 100%
-        max-width: 250px
-        margin-top: 70px
+        max-width: 230px
+        margin-top: 50px
     &__text
         color: $color_text
         width: 950px
         margin-top: 30px
 
+//PORTFOLIO
+.portfolio
+    &__content
+        height: 1280px
+        display: flex
+        flex-direction: column
+        align-content: center
+        align-items: center
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+        background: url(../image/bg.jpg) 100% 100% no-repeat
+        background-attachment: fixed
+        background-size: 100% 100%
+    &__title
+        font-size: 30px
+        color: $color_header
+        letter-spacing: 1px
+        font-weight: bold
+        margin-top: 70px
+        padding-bottom: 35px
+        border-bottom: solid 5px $color_orange
+    &__subtitle
+        color: $color_black
+        width: 950px
+        margin-top: 30px
+    &__list
+        display: flex
+        flex-direction: row
+        margin-top: 60px
+    &__item
+        padding: 0 44px 0 44px
+        color: $color_black
+    &__item_center
+        border-right: solid 1px $color_black
+        border-left: solid 1px $color_black
+        padding: 0 44px 0 44px
+        color: $color_black
+    &__layout 
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        margin-top: 20px
+    &__example_one
+        background: url(../image/one.png) 100% 100% no-repeat
+        @include example
+    &__example_two
+        background: url(../image/two.png) 100% 100% no-repeat
+        @include example
+    &__example_three
+        background: url(../image/three.png) 100% 100% no-repeat
+        @include example
+    &__example_four
+        background: url(../image/four.png) 100% 100% no-repeat
+        @include example
+
+//CONTACT
+.contact
+    &__content 
+        height: 500px
+        display: flex
+        flex-direction: column
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+    &__title
+        font-size: 30px
+        color: $color_header
+        letter-spacing: 1px
+        font-weight: bold
+        padding-bottom: 35px
+        border-bottom: solid 5px $color_orange
+        width: 220px
+        text-align: center
+        margin: 90px auto 0 auto
+    &__info
+        color: $color_black
+        margin-top: 50px
+        text-align: center
+    &__box 
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-around
+        margin-top: 110px
+    &__item 
+        display: flex
+        flex-direction: column
+        align-items: center
+        color: $color_black
+    &__image 
+        font-size: 35px
+        margin-bottom: 40px
+        color: $color_black
+        

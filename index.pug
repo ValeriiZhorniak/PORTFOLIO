@@ -3,32 +3,66 @@ html(lang="en")
   head
     link(rel="stylesheet" type="text/css" href="css/normal.css")
     link(rel="stylesheet" type="text/css" href="css/media.css")
+    link(rel="stylesheet" type="text/css" href="css/icons.css")
     link(rel="stylesheet" type="text/css" href="css/style.css")
     title Portfolio
   body
     header.header 
       header.header__content 
-        p.header__name Valerii Zhorniak
+        a(href="https://github.com/ValeriiZhorniak", target="_blank").header__name Valerii Zhorniak
         nav.header__nav 
           ul.header__list
             li
               a(href="#about").header__item ABOUT
             li
-              a(href="#").header__item PORTFOLIO
+              a(href="#portfolio").header__item PORTFOLIO
             li
-              a(href="#").header__item SKILLS
-            li
-              a(href="#").header__item SERVICES
-            li
-              a(href="#").header__item CONTACT
+              a(href="#contact").header__item CONTACT
     
     .about 
-      <a id="about"></a>
+      a#about
       .about__content 
         p.about__title ABOUT ME 
         img.about__photo(src="image/photo.jpg", alt="photo")
         p.about__text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, id! Nihil iure officia eum autem qui repellendus illo voluptatibus, aperiam quasi, incidunt vero excepturi. Tenetur assumenda temporibus reiciendis illo quos cum consequatur, facere eveniet ipsam modi asperiores at deserunt! Pariatur hic incidunt neque, optio sed quod explicabo! Facere nobis nulla quia repudiandae eos? Repudiandae rerum natus dolores accusamus, officia laboriosam adipisci quod quis sunt sit ipsam. Reiciendis minus exercitationem in ea quisquam quaerat voluptatum, eveniet autem deserunt, voluptate repellat at quod temporibus laudantium? Impedit necessitatibus nostrum, distinctio odio enim delectus iusto porro. Iusto, voluptas! Fugit beatae harum, sapiente eveniet esse tempora sit, repellendus, cumque voluptas eius ducimus. Modi saepe error vitae autem sapiente, est voluptatem nemo, quasi veniam a veritatis obcaecati ipsa dicta! Laudantium iusto voluptatibus vitae corporis quaerat sit numquam. Eius, nostrum magnam voluptas eos quas incidunt ipsam sapiente exercitationem laudantium, autem aperiam aspernatur sint beatae alias pariatur laborum. Deleniti in ducimus aliquid sequi perferendis? Enim laboriosam dolores, ratione quis numquam eos voluptas alias esse eaque recusandae dolorem? Aut ducimus vel quae, quisquam at adipisci saepe odit fugiat dolore voluptatum. Quia eum sint ab eligendi dolor labore neque impedit unde inventore cum, sunt officiis, quis culpa fugiat pariatur commodi! Debitis libero, itaque nemo quasi ipsam corporis, laborum quam omnis ipsum nobis perferendis magnam vero adipisci officia quisquam. Tempora voluptates ratione impedit enim cum quae adipisci nostrum sequi recusandae ad. A minima deserunt ea magni, deleniti in dolor cupiditate nisi cum quibusdam! Velit ratione nemo repellendus similique eius molestias, deleniti dignissimos et numquam, rem sit necessitatibus, quos quae facere at unde doloremque consequuntur tempore fuga consequatur recusandae odio. Praesentium eos dicta non ut nam deserunt animi delectus pariatur ab cumque sint quae vel dolorum, magni autem exercitationem ea a alias. Inventore temporibus, blanditiis molestias architecto quia reprehenderit. Enim, vero pariatur!
 
+    .portfolio
+      a#portfolio
+      .portfolio__content 
+        p.portfolio__title MY PORTFOLIO
+        p.portfolio__subtitle Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates delectus in sed accusantium perferendis dolor.
+        ul.portfolio__list
+          li.portfolio__item All
+          li.portfolio__item_center JavaScript
+          li.portfolio__item Preprocessors 
+        .portfolio__layout 
+          a(href="https://valeriizhorniak.github.io/BEM__LAYOUT/", target="_blank").portfolio__example_one
+          a(href="https://valeriizhorniak.github.io/LAYOUT/", target="_blank").portfolio__example_two
+          a(href="https://valeriizhorniak.github.io/PUG__LESS__JS__BEM__LAYOUT/", target="_blank").portfolio__example_three
+          a(href="https://valeriizhorniak.github.io/SCSS__JS__BEM__LAYOUT/", target="_blank").portfolio__example_four
+
+    .contact
+      a#contact
+      .contact__content 
+        p.contact__title CONTACT ME 
+        p.contact__info Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ducimus facere eius saepe, sit officiis.
+        .contact__box 
+          a(href="mailto:zhorniakvalerii@gmail.com").contact__item 
+            .far.fa-envelope.contact__image 
+            .contact__name zhorniakvalerii@gmail.com
+          a(href="tel:+380953962356").contact__item 
+            .fas.fa-phone-alt.contact__image 
+            .contact__name +380 (95) 396 23 56
+          a.contact__item(href="https://github.com/ValeriiZhorniak", target="_blank")
+            .fab.fa-github.contact__image
+            .contact__name GitHub
+          a.contact__item(href="https://www.linkedin.com/in/valerii-zhorniak-b6907b1a3/", target="_blank")
+            .fab.fa-linkedin-in.contact__image
+            .contact__name LinkedIn
+          
+
+      
+    
 
 
 
