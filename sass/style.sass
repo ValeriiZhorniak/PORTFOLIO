@@ -7,8 +7,8 @@ $color_black: #000
 
 @mixin example
     background-size: 100% 100%
-    width: 400px
-    height: 400px
+    min-width: 400px
+    min-height: 400px
     margin: 30px 60px 30px 60px
     border: 1px solid $color_text
 
@@ -17,8 +17,8 @@ $color_black: #000
     &__content 
         position: fixed
         z-index: 10
-        width: 100%
-        height: 60px
+        min-width: 100%
+        min-height: 60px
         background-color: $color_header
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
         display: flex
@@ -42,7 +42,7 @@ $color_black: #000
 //ABOUT
 .about
     &__content
-        height: 900px
+        min-height: 800px
         display: flex
         flex-direction: column
         align-content: center
@@ -64,13 +64,15 @@ $color_black: #000
         margin-top: 50px
     &__text
         color: $color_text
-        width: 950px
-        margin-top: 30px
+        max-width: 950px
+        margin: 30px auto 20px auto
+        padding: 0 10px
+        text-align: center
 
 //PORTFOLIO
 .portfolio
     &__content
-        height: 1280px
+        min-height: 1200px
         display: flex
         flex-direction: column
         align-content: center
@@ -89,8 +91,9 @@ $color_black: #000
         border-bottom: solid 5px $color_orange
     &__subtitle
         color: $color_black
-        width: 950px
+        max-width: 950px
         margin-top: 30px
+        text-align: center
     &__list
         display: flex
         flex-direction: row
@@ -112,6 +115,8 @@ $color_black: #000
     &__example_one
         background: url(../image/one.png) 100% 100% no-repeat
         @include example
+        &:hover
+            
     &__example_two
         background: url(../image/two.png) 100% 100% no-repeat
         @include example
@@ -125,7 +130,7 @@ $color_black: #000
 //CONTACT
 .contact
     &__content 
-        height: 500px
+        min-height: 500px
         display: flex
         flex-direction: column
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
@@ -136,7 +141,7 @@ $color_black: #000
         font-weight: bold
         padding-bottom: 35px
         border-bottom: solid 5px $color_orange
-        width: 220px
+        min-width: 220px
         text-align: center
         margin: 90px auto 0 auto
     &__info
