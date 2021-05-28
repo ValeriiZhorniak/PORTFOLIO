@@ -7,12 +7,11 @@
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-around;
 }
 .header__item {
   color: #fff;
-  margin: 0 20px 0 20px;
+  margin: auto 20px auto 20px;
   letter-spacing: 1px;
 }
 .header__item:hover {
@@ -22,9 +21,11 @@
 .header__name {
   color: #fff;
   letter-spacing: 1px;
+  margin-top: 20px;
 }
 .header__list {
   display: flex;
+  margin-top: 20px;
   flex-direction: row;
 }
 
@@ -32,6 +33,7 @@
   min-height: 800px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-content: center;
   align-items: center;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -54,9 +56,7 @@
 }
 .about__text {
   color: #616e7c;
-  max-width: 950px;
-  margin: 30px auto 20px auto;
-  padding: 0 10px;
+  margin: 30px 20% 20px 20%;
   text-align: center;
 }
 
@@ -82,8 +82,7 @@
 }
 .portfolio__subtitle {
   color: #000;
-  max-width: 950px;
-  margin-top: 30px;
+  margin: 30px 20% 20px 20%;
   text-align: center;
 }
 .portfolio__list {
@@ -104,6 +103,7 @@
 .portfolio__layout {
   display: flex;
   flex-direction: row;
+  -ms-flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
@@ -154,7 +154,7 @@
   font-weight: bold;
   padding-bottom: 35px;
   border-bottom: solid 5px #f48f1a;
-  min-width: 220px;
+  width: 220px;
   text-align: center;
   margin: 90px auto 0 auto;
 }
@@ -166,6 +166,7 @@
 .contact__box {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   margin-top: 110px;
