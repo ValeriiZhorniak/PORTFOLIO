@@ -30,7 +30,7 @@
 }
 
 .about__content {
-  min-height: 800px;
+  min-height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +43,7 @@
   color: #2c3e50;
   letter-spacing: 1px;
   font-weight: bold;
-  margin-top: 150px;
+  margin-top: 80px;
   padding-bottom: 35px;
   border-bottom: solid 5px #f48f1a;
 }
@@ -55,9 +55,10 @@
   margin-top: 50px;
 }
 .about__text {
-  color: #616e7c;
-  margin: 30px 20% 20px 20%;
+  color: #000;
+  margin: 30px 25% 20px 25%;
   text-align: center;
+  line-height: 1.5;
 }
 
 .portfolio__content {
@@ -114,7 +115,7 @@
   min-width: 400px;
   min-height: 400px;
   margin: 30px 60px 30px 60px;
-  border: 1px solid #616e7c;
+  border: 1px solid #000;
 }
 .portfolio__example_two {
   background: url(../image/two.png) 100% 100% no-repeat;
@@ -122,7 +123,7 @@
   min-width: 400px;
   min-height: 400px;
   margin: 30px 60px 30px 60px;
-  border: 1px solid #616e7c;
+  border: 1px solid #000;
 }
 .portfolio__example_three {
   background: url(../image/three.png) 100% 100% no-repeat;
@@ -130,7 +131,7 @@
   min-width: 400px;
   min-height: 400px;
   margin: 30px 60px 30px 60px;
-  border: 1px solid #616e7c;
+  border: 1px solid #000;
 }
 .portfolio__example_four {
   background: url(../image/four.png) 100% 100% no-repeat;
@@ -138,7 +139,7 @@
   min-width: 400px;
   min-height: 400px;
   margin: 30px 60px 30px 60px;
-  border: 1px solid #616e7c;
+  border: 1px solid #000;
 }
 
 .contact__content {
