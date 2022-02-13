@@ -1,5 +1,5 @@
 @media (max-width: 767px){
-    .header__name{
+    .header__nav{
         display: none;
     }
     .portfolio__example_one{
@@ -20,11 +20,11 @@
     .header__item{
         margin: auto 5px;
     }
-    .header__content{
-        justify-content: flex-start;
-    }
     .about__text{
         margin: 20px 5% 20px 5%
+    }
+    .experience__item div{
+        margin: 20px -50px 20px -50px;
     }
     .portfolio__subtitle{
         margin: 20px 5% 0 5%
@@ -41,5 +41,11 @@
     }
     .contact__item{
         margin-top: 20px;
+    }
+    .contact__name {
+        display: none;
+    }
+    .contact__content{
+        min-height: 300px;
     }
 }
